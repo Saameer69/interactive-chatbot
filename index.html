@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="chat-wrapper">
+  <div class="chat-container">
+
+    <!-- ===== HEADER ===== -->
+    <div class="chat-header">
+      <div class="header-left">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" />
+        <div>
+          <h3>AI Assistant</h3>
+          <p>Online</p>
+        </div>
+      </div>
+
+      <!-- ===== THEME TOGGLE ===== -->
+      <div class="theme-switch">
+        <input type="checkbox" id="themeToggle" />
+        <label for="themeToggle" class="ripple">
+          <!-- SUN SVG -->
+          <svg class="icon sun" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"></circle>
+            <g>
+              <line x1="12" y1="1" x2="12" y2="4"></line>
+              <line x1="12" y1="20" x2="12" y2="23"></line>
+              <line x1="1" y1="12" x2="4" y2="12"></line>
+              <line x1="20" y1="12" x2="23" y2="12"></line>
+              <line x1="4.5" y1="4.5" x2="6.5" y2="6.5"></line>
+              <line x1="17.5" y1="17.5" x2="19.5" y2="19.5"></line>
+              <line x1="17.5" y1="6.5" x2="19.5" y2="4.5"></line>
+              <line x1="4.5" y1="19.5" x2="6.5" y2="17.5"></line>
+            </g>
+          </svg>
+
+          <!-- MOON SVG -->
+          <svg class="icon moon" viewBox="0 0 24 24">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"></path>
+          </svg>
+        </label>
+      </div>
+    </div>
+
+    <!-- ===== CHAT BODY ===== -->
+    <div id="chat-body"></div>
+
+    <!-- ===== TYPING INDICATOR ===== -->
+    <div id="typing" class="typing hidden">
+      AI is typing<span>.</span><span>.</span><span>.</span>
+    </div>
+
+    <!-- ===== INPUT AREA ===== -->
+    <div class="chat-input">
+      <input id="input" placeholder="Type a message..." />
+      <button onclick="send()">➤</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== SOUND ===== -->
+<audio id="sendSound">
+  <source src="https://assets.mixkit.co/sfx/preview/mixkit-message-pop-alert-2354.mp3">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
