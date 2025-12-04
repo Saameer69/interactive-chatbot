@@ -1,60 +1,36 @@
-# Portfolio AI Chatbot
+# AI Chatbot Web Application
 
-A full-stack interactive AI chatbot demo, perfect for portfolios.
-
-## Folder Structure
-
-simple_chatbot/
-│
-├── backend/
-│ ├── app.py
-│ ├── requirements.txt
-│
-├── frontend/
-│ ├── index.html
-│ ├── style.css
-│ ├── script.js
-│ └── assets/
-│ ├── bot-avatar.png
-│ ├── screenshot-light.png
-│ └── screenshot-dark.png
-│
-└── README.md
-
-
+A modern AI-powered chatbot with a clean and interactive UI, built for portfolio demonstration.
 
 ## Features
+- Dark / Light mode toggle with animated switch
+- AI typing indicator
+- Message sound effect
+- User & bot avatars
+- Timestamped messages
+- Enter key support
+- Responsive chat layout
 
-- Modern chat UI with **glassmorphism**  
-- **Dark/Light theme** toggle with SVG icons and ripple animation  
-- Typing indicator ("AI is typing...")  
-- Chat avatars and timestamps  
-- Sound feedback on sending messages  
-- Enter key support  
-- Fully responsive  
+## Tech Stack
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- FastAPI (Python)
 
-## Backend
+## Project Structure
+backend/ # Chatbot API
 
-- Python FastAPI backend for chatbot responses  
-- Simple demo AI with static replies  
-- Endpoint: `/chat` accepts POST JSON `{ "message": "your message" }`  
-
-### Setup
-
-1. Go to backend folder:
-   ```bash
-   cd backend
-   pip install -r requirements.txt
-   uvicorn app:app --reload
-
-2. Open frontend/index.html in your browser (or deploy frontend on Netlify/GitHub Pages)
+frontend/ # UI (GitHub Pages)
 
 
----
+## Live Demo
+👉 https://YOUR_USERNAME.github.io/ai-chatbot-portfolio/
 
-# ✅ 5️⃣ How to Run (Local)
+⚠ Note: This live demo showcases the UI/UX.
+Backend runs locally using FastAPI.
 
-1. **Start backend**  
+
+## Backend (Local Run)
 ```bash
 cd backend
 pip install -r requirements.txt
