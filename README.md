@@ -24,7 +24,7 @@ frontend/ # UI (GitHub Pages)
 
 
 ## Live Demo
-👉 https://YOUR_USERNAME.github.io/ai-chatbot-portfolio/
+👉 https://saameer69.github.io/interactive-chatbot/
 
 ⚠ Note: This live demo showcases the UI/UX.
 Backend runs locally using FastAPI.
@@ -35,3 +35,4 @@ Backend runs locally using FastAPI.
 cd backend
 pip install -r requirements.txt
 uvicorn app:app --reload
+
